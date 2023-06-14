@@ -1,0 +1,1698 @@
+Feb 24, 2023 3:35:37 PM edu.wpi.first.shuffleboard.app.Shuffleboard init
+INFO: Build time: 2022-02-26T21:38:33.311213200Z
+Feb 24, 2023 3:35:37 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loading plugin edu.wpi.first.shuffleboard:Base:1.3.1
+Feb 24, 2023 3:35:38 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loaded plugin edu.wpi.first.shuffleboard:Base in 330ms
+Feb 24, 2023 3:35:38 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loading plugin edu.wpi.first.shuffleboard:NetworkTables:2.3.0
+Feb 24, 2023 3:35:38 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loaded plugin edu.wpi.first.shuffleboard:NetworkTables in 38ms
+Feb 24, 2023 3:35:38 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loading plugin edu.wpi.first.shuffleboard:CameraServer:3.1.0
+Feb 24, 2023 3:35:44 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loaded plugin edu.wpi.first.shuffleboard:CameraServer in 6202ms
+Feb 24, 2023 3:35:45 PM edu.wpi.first.shuffleboard.app.MainWindowController initialize
+INFO: Setting up plugins in the UI
+Feb 24, 2023 3:35:45 PM edu.wpi.first.shuffleboard.app.Shuffleboard init
+WARNING: Took 596ms to load the main FXML
+Feb 24, 2023 3:35:51 PM edu.wpi.first.shuffleboard.app.Shuffleboard start
+WARNING: Took 14223ms to start Shuffleboard
+Feb 24, 2023 3:35:51 PM edu.wpi.first.shuffleboard.app.Shuffleboard uncaughtException
+WARNING: Uncaught exception on JavaFX Application Thread
+java.lang.ClassCastException: class com.google.gson.internal.LazilyParsedNumber cannot be cast to class java.lang.Integer (com.google.gson.internal.LazilyParsedNumber is in unnamed module of loader 'app'; java.lang.Integer is in module java.base of loader 'bootstrap')
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.widget.CameraServerWidget.applySettings(CameraServerWidget.java:165)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.widget.CameraServerWidget.lambda$initialize$6(CameraServerWidget.java:126)
+	at com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:360)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+	at javafx.beans.property.ObjectPropertyBase.fireValueChangedEvent(ObjectPropertyBase.java:106)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:113)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at edu.wpi.first.shuffleboard.api.widget.SingleSourceWidget.addSource(SingleSourceWidget.java:20)
+	at edu.wpi.first.shuffleboard.app.json.WidgetSaver.deserialize(WidgetSaver.java:73)
+	at edu.wpi.first.shuffleboard.app.json.WidgetSaver.deserialize(WidgetSaver.java:23)
+	at edu.wpi.first.shuffleboard.api.json.ElementTypeAdapter.deserialize(ElementTypeAdapter.java:30)
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:953)
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162)
+	at edu.wpi.first.shuffleboard.app.json.WidgetPaneSaver.deserialize(WidgetPaneSaver.java:79)
+	at edu.wpi.first.shuffleboard.app.json.WidgetPaneSaver.deserialize(WidgetPaneSaver.java:25)
+	at edu.wpi.first.shuffleboard.api.json.ElementTypeAdapter.deserialize(ElementTypeAdapter.java:30)
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:953)
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162)
+	at edu.wpi.first.shuffleboard.app.json.DashboardTabPaneSaver.deserialize(DashboardTabPaneSaver.java:55)
+	at edu.wpi.first.shuffleboard.app.json.DashboardTabPaneSaver.deserialize(DashboardTabPaneSaver.java:22)
+	at edu.wpi.first.shuffleboard.api.json.ElementTypeAdapter.deserialize(ElementTypeAdapter.java:30)
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.read(ReflectiveTypeAdapterFactory.java:129)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:220)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:826)
+	at edu.wpi.first.shuffleboard.app.SaveFileHandler.load(SaveFileHandler.java:115)
+	at edu.wpi.first.shuffleboard.app.MainWindowController.load(MainWindowController.java:254)
+	at edu.wpi.first.shuffleboard.app.Shuffleboard.lambda$start$3(Shuffleboard.java:116)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Feb 24, 2023 4:19:09 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get bandwidth
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualDataRate(VideoSource.java:334)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:139)
+
+Feb 24, 2023 4:19:09 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get framerate
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualFPS(VideoSource.java:321)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:145)
+
+Feb 24, 2023 4:24:29 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {.type=FMSInfo}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinDnDClipboard.push(Native Method)
+	at com.sun.glass.ui.win.WinSystemClipboard.pushToSystem(WinSystemClipboard.java:234)
+	at com.sun.glass.ui.SystemClipboard.flush(SystemClipboard.java:51)
+	at com.sun.glass.ui.ClipboardAssistance.flush(ClipboardAssistance.java:59)
+	at com.sun.javafx.tk.quantum.QuantumClipboard.flush(QuantumClipboard.java:274)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.startDrag(QuantumToolkit.java:1286)
+	at javafx.scene.Scene$DnDGesture.dragDetectedProcessed(Scene.java:3049)
+	at javafx.scene.Scene$DnDGesture.process(Scene.java:3118)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3878)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2590)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:409)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:299)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:447)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:412)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:446)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 29 more
+
+Feb 24, 2023 4:24:29 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {ReplayNumber=0.0, .type=FMSInfo}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinDnDClipboard.push(Native Method)
+	at com.sun.glass.ui.win.WinSystemClipboard.pushToSystem(WinSystemClipboard.java:234)
+	at com.sun.glass.ui.SystemClipboard.flush(SystemClipboard.java:51)
+	at com.sun.glass.ui.ClipboardAssistance.flush(ClipboardAssistance.java:59)
+	at com.sun.javafx.tk.quantum.QuantumClipboard.flush(QuantumClipboard.java:274)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.startDrag(QuantumToolkit.java:1286)
+	at javafx.scene.Scene$DnDGesture.dragDetectedProcessed(Scene.java:3049)
+	at javafx.scene.Scene$DnDGesture.process(Scene.java:3118)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3878)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2590)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:409)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:299)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:447)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:412)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:446)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 29 more
+
+Feb 24, 2023 4:24:29 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {IsRedAlliance=true, ReplayNumber=0.0, .type=FMSInfo}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinDnDClipboard.push(Native Method)
+	at com.sun.glass.ui.win.WinSystemClipboard.pushToSystem(WinSystemClipboard.java:234)
+	at com.sun.glass.ui.SystemClipboard.flush(SystemClipboard.java:51)
+	at com.sun.glass.ui.ClipboardAssistance.flush(ClipboardAssistance.java:59)
+	at com.sun.javafx.tk.quantum.QuantumClipboard.flush(QuantumClipboard.java:274)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.startDrag(QuantumToolkit.java:1286)
+	at javafx.scene.Scene$DnDGesture.dragDetectedProcessed(Scene.java:3049)
+	at javafx.scene.Scene$DnDGesture.process(Scene.java:3118)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3878)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2590)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:409)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:299)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:447)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:412)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:446)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 29 more
+
+Feb 24, 2023 4:24:29 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {IsRedAlliance=true, ReplayNumber=0.0, StationNumber=1.0, .type=FMSInfo}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinDnDClipboard.push(Native Method)
+	at com.sun.glass.ui.win.WinSystemClipboard.pushToSystem(WinSystemClipboard.java:234)
+	at com.sun.glass.ui.SystemClipboard.flush(SystemClipboard.java:51)
+	at com.sun.glass.ui.ClipboardAssistance.flush(ClipboardAssistance.java:59)
+	at com.sun.javafx.tk.quantum.QuantumClipboard.flush(QuantumClipboard.java:274)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.startDrag(QuantumToolkit.java:1286)
+	at javafx.scene.Scene$DnDGesture.dragDetectedProcessed(Scene.java:3049)
+	at javafx.scene.Scene$DnDGesture.process(Scene.java:3118)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3878)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2590)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:409)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:299)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:447)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:412)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:446)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 29 more
+
+Feb 24, 2023 4:24:29 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {IsRedAlliance=true, ReplayNumber=0.0, StationNumber=1.0, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinDnDClipboard.push(Native Method)
+	at com.sun.glass.ui.win.WinSystemClipboard.pushToSystem(WinSystemClipboard.java:234)
+	at com.sun.glass.ui.SystemClipboard.flush(SystemClipboard.java:51)
+	at com.sun.glass.ui.ClipboardAssistance.flush(ClipboardAssistance.java:59)
+	at com.sun.javafx.tk.quantum.QuantumClipboard.flush(QuantumClipboard.java:274)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.startDrag(QuantumToolkit.java:1286)
+	at javafx.scene.Scene$DnDGesture.dragDetectedProcessed(Scene.java:3049)
+	at javafx.scene.Scene$DnDGesture.process(Scene.java:3118)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3878)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2590)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:409)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:299)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:447)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:412)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:446)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 29 more
+
+Feb 24, 2023 4:24:29 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {IsRedAlliance=true, ReplayNumber=0.0, MatchNumber=0.0, StationNumber=1.0, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinDnDClipboard.push(Native Method)
+	at com.sun.glass.ui.win.WinSystemClipboard.pushToSystem(WinSystemClipboard.java:234)
+	at com.sun.glass.ui.SystemClipboard.flush(SystemClipboard.java:51)
+	at com.sun.glass.ui.ClipboardAssistance.flush(ClipboardAssistance.java:59)
+	at com.sun.javafx.tk.quantum.QuantumClipboard.flush(QuantumClipboard.java:274)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.startDrag(QuantumToolkit.java:1286)
+	at javafx.scene.Scene$DnDGesture.dragDetectedProcessed(Scene.java:3049)
+	at javafx.scene.Scene$DnDGesture.process(Scene.java:3118)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3878)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2590)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:409)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:299)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:447)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:412)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:446)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 29 more
+
+Feb 24, 2023 4:24:29 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {IsRedAlliance=true, GameSpecificMessage=, ReplayNumber=0.0, MatchNumber=0.0, StationNumber=1.0, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinDnDClipboard.push(Native Method)
+	at com.sun.glass.ui.win.WinSystemClipboard.pushToSystem(WinSystemClipboard.java:234)
+	at com.sun.glass.ui.SystemClipboard.flush(SystemClipboard.java:51)
+	at com.sun.glass.ui.ClipboardAssistance.flush(ClipboardAssistance.java:59)
+	at com.sun.javafx.tk.quantum.QuantumClipboard.flush(QuantumClipboard.java:274)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.startDrag(QuantumToolkit.java:1286)
+	at javafx.scene.Scene$DnDGesture.dragDetectedProcessed(Scene.java:3049)
+	at javafx.scene.Scene$DnDGesture.process(Scene.java:3118)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3878)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2590)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:409)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:299)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:447)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:412)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:446)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: MatchType
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:71)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 29 more
+
+Feb 24, 2023 4:24:29 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {IsRedAlliance=true, GameSpecificMessage=, ReplayNumber=0.0, MatchNumber=0.0, StationNumber=1.0, .type=FMSInfo, FMSControlData=33.0, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinDnDClipboard.push(Native Method)
+	at com.sun.glass.ui.win.WinSystemClipboard.pushToSystem(WinSystemClipboard.java:234)
+	at com.sun.glass.ui.SystemClipboard.flush(SystemClipboard.java:51)
+	at com.sun.glass.ui.ClipboardAssistance.flush(ClipboardAssistance.java:59)
+	at com.sun.javafx.tk.quantum.QuantumClipboard.flush(QuantumClipboard.java:274)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.startDrag(QuantumToolkit.java:1286)
+	at javafx.scene.Scene$DnDGesture.dragDetectedProcessed(Scene.java:3049)
+	at javafx.scene.Scene$DnDGesture.process(Scene.java:3118)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3878)
+	at javafx.scene.Scene.processMouseEvent(Scene.java:1849)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2590)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:409)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:299)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:447)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:412)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:446)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:556)
+	at com.sun.glass.ui.View.notifyMouse(View.java:942)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: MatchType
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:71)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 29 more
+
+Feb 24, 2023 4:27:38 PM edu.wpi.first.shuffleboard.app.Shuffleboard uncaughtException
+WARNING: Uncaught exception on JavaFX Application Thread
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 8
+	at javafx.collections.ListChangeListener$Change.getPermutation(ListChangeListener.java:295)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2599)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2449)
+	at javafx.event.WeakEventHandler.handle(WeakEventHandler.java:79)
+	at com.sun.javafx.event.CompositeEventHandler$WeakEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:248)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.TreeItem.fireEvent(TreeItem.java:764)
+	at javafx.scene.control.TreeItem.updateChildren(TreeItem.java:943)
+	at javafx.scene.control.TreeItem.lambda$new$0(TreeItem.java:425)
+	at com.sun.javafx.collections.ListListenerHelper$SingleChange.fireValueChangedEvent(ListListenerHelper.java:164)
+	at com.sun.javafx.collections.ListListenerHelper.fireValueChangedEvent(ListListenerHelper.java:73)
+	at javafx.collections.ObservableListBase.fireChange(ObservableListBase.java:233)
+	at javafx.collections.transformation.SortedList.doSortWithPermutationChange(SortedList.java:217)
+	at javafx.collections.transformation.SortedList$1.invalidated(SortedList.java:132)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at javafx.collections.transformation.SortedList.setComparator(SortedList.java:155)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:90)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:94)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.makeBranches(SourceTreeTable.java:153)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.removeEntry(SourceTreeTable.java:81)
+	at edu.wpi.first.shuffleboard.app.components.InteractiveSourceTree.lambda$new$5(InteractiveSourceTree.java:94)
+	at com.sun.javafx.collections.MapListenerHelper$SingleChange.fireValueChangedEvent(MapListenerHelper.java:163)
+	at com.sun.javafx.collections.MapListenerHelper.fireValueChangedEvent(MapListenerHelper.java:72)
+	at com.sun.javafx.collections.ObservableMapWrapper.callObservers(ObservableMapWrapper.java:115)
+	at com.sun.javafx.collections.ObservableMapWrapper.clear(ObservableMapWrapper.java:203)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSourceType.lambda$new$2(NetworkTableSourceType.java:45)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Feb 24, 2023 4:27:38 PM edu.wpi.first.shuffleboard.app.Shuffleboard uncaughtException
+WARNING: Uncaught exception on JavaFX Application Thread
+java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 8
+	at javafx.collections.ListChangeListener$Change.getPermutation(ListChangeListener.java:295)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2599)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2449)
+	at javafx.event.WeakEventHandler.handle(WeakEventHandler.java:79)
+	at com.sun.javafx.event.CompositeEventHandler$WeakEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:248)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.TreeItem.fireEvent(TreeItem.java:764)
+	at javafx.scene.control.TreeItem.updateChildren(TreeItem.java:943)
+	at javafx.scene.control.TreeItem.lambda$new$0(TreeItem.java:425)
+	at com.sun.javafx.collections.ListListenerHelper$SingleChange.fireValueChangedEvent(ListListenerHelper.java:164)
+	at com.sun.javafx.collections.ListListenerHelper.fireValueChangedEvent(ListListenerHelper.java:73)
+	at javafx.collections.ObservableListBase.fireChange(ObservableListBase.java:233)
+	at javafx.collections.transformation.SortedList.doSortWithPermutationChange(SortedList.java:189)
+	at javafx.collections.transformation.SortedList$1.invalidated(SortedList.java:132)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at javafx.collections.transformation.SortedList.setComparator(SortedList.java:155)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:91)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:94)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.makeBranches(SourceTreeTable.java:153)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.removeEntry(SourceTreeTable.java:81)
+	at edu.wpi.first.shuffleboard.app.components.InteractiveSourceTree.lambda$new$5(InteractiveSourceTree.java:94)
+	at com.sun.javafx.collections.MapListenerHelper$SingleChange.fireValueChangedEvent(MapListenerHelper.java:163)
+	at com.sun.javafx.collections.MapListenerHelper.fireValueChangedEvent(MapListenerHelper.java:72)
+	at com.sun.javafx.collections.ObservableMapWrapper.callObservers(ObservableMapWrapper.java:115)
+	at com.sun.javafx.collections.ObservableMapWrapper.clear(ObservableMapWrapper.java:203)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSourceType.lambda$new$2(NetworkTableSourceType.java:45)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Feb 24, 2023 4:27:38 PM edu.wpi.first.shuffleboard.app.Shuffleboard uncaughtException
+WARNING: Uncaught exception on JavaFX Application Thread
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at javafx.collections.ListChangeListener$Change.getPermutation(ListChangeListener.java:295)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2599)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2449)
+	at javafx.event.WeakEventHandler.handle(WeakEventHandler.java:79)
+	at com.sun.javafx.event.CompositeEventHandler$WeakEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:248)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.TreeItem.fireEvent(TreeItem.java:764)
+	at javafx.scene.control.TreeItem.updateChildren(TreeItem.java:943)
+	at javafx.scene.control.TreeItem.lambda$new$0(TreeItem.java:425)
+	at com.sun.javafx.collections.ListListenerHelper$SingleChange.fireValueChangedEvent(ListListenerHelper.java:164)
+	at com.sun.javafx.collections.ListListenerHelper.fireValueChangedEvent(ListListenerHelper.java:73)
+	at javafx.collections.ObservableListBase.fireChange(ObservableListBase.java:233)
+	at javafx.collections.transformation.SortedList.doSortWithPermutationChange(SortedList.java:217)
+	at javafx.collections.transformation.SortedList$1.invalidated(SortedList.java:132)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at javafx.collections.transformation.SortedList.setComparator(SortedList.java:155)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:90)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:94)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.makeBranches(SourceTreeTable.java:153)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.removeEntry(SourceTreeTable.java:81)
+	at edu.wpi.first.shuffleboard.app.components.InteractiveSourceTree.lambda$new$5(InteractiveSourceTree.java:94)
+	at com.sun.javafx.collections.MapListenerHelper$SingleChange.fireValueChangedEvent(MapListenerHelper.java:163)
+	at com.sun.javafx.collections.MapListenerHelper.fireValueChangedEvent(MapListenerHelper.java:72)
+	at com.sun.javafx.collections.ObservableMapWrapper.callObservers(ObservableMapWrapper.java:115)
+	at com.sun.javafx.collections.ObservableMapWrapper.clear(ObservableMapWrapper.java:203)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSourceType.lambda$new$2(NetworkTableSourceType.java:45)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Feb 24, 2023 4:27:38 PM edu.wpi.first.shuffleboard.app.Shuffleboard uncaughtException
+WARNING: Uncaught exception on JavaFX Application Thread
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at javafx.collections.ListChangeListener$Change.getPermutation(ListChangeListener.java:295)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2599)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2449)
+	at javafx.event.WeakEventHandler.handle(WeakEventHandler.java:79)
+	at com.sun.javafx.event.CompositeEventHandler$WeakEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:248)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.TreeItem.fireEvent(TreeItem.java:764)
+	at javafx.scene.control.TreeItem.updateChildren(TreeItem.java:943)
+	at javafx.scene.control.TreeItem.lambda$new$0(TreeItem.java:425)
+	at com.sun.javafx.collections.ListListenerHelper$SingleChange.fireValueChangedEvent(ListListenerHelper.java:164)
+	at com.sun.javafx.collections.ListListenerHelper.fireValueChangedEvent(ListListenerHelper.java:73)
+	at javafx.collections.ObservableListBase.fireChange(ObservableListBase.java:233)
+	at javafx.collections.transformation.SortedList.doSortWithPermutationChange(SortedList.java:189)
+	at javafx.collections.transformation.SortedList$1.invalidated(SortedList.java:132)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at javafx.collections.transformation.SortedList.setComparator(SortedList.java:155)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:91)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:94)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.makeBranches(SourceTreeTable.java:153)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.removeEntry(SourceTreeTable.java:81)
+	at edu.wpi.first.shuffleboard.app.components.InteractiveSourceTree.lambda$new$5(InteractiveSourceTree.java:94)
+	at com.sun.javafx.collections.MapListenerHelper$SingleChange.fireValueChangedEvent(MapListenerHelper.java:163)
+	at com.sun.javafx.collections.MapListenerHelper.fireValueChangedEvent(MapListenerHelper.java:72)
+	at com.sun.javafx.collections.ObservableMapWrapper.callObservers(ObservableMapWrapper.java:115)
+	at com.sun.javafx.collections.ObservableMapWrapper.clear(ObservableMapWrapper.java:203)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSourceType.lambda$new$2(NetworkTableSourceType.java:45)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Feb 24, 2023 4:27:38 PM edu.wpi.first.shuffleboard.app.Shuffleboard uncaughtException
+WARNING: Uncaught exception on JavaFX Application Thread
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at javafx.collections.ListChangeListener$Change.getPermutation(ListChangeListener.java:295)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2599)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2449)
+	at javafx.event.WeakEventHandler.handle(WeakEventHandler.java:79)
+	at com.sun.javafx.event.CompositeEventHandler$WeakEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:248)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.TreeItem.fireEvent(TreeItem.java:764)
+	at javafx.scene.control.TreeItem.updateChildren(TreeItem.java:943)
+	at javafx.scene.control.TreeItem.lambda$new$0(TreeItem.java:425)
+	at com.sun.javafx.collections.ListListenerHelper$SingleChange.fireValueChangedEvent(ListListenerHelper.java:164)
+	at com.sun.javafx.collections.ListListenerHelper.fireValueChangedEvent(ListListenerHelper.java:73)
+	at javafx.collections.ObservableListBase.fireChange(ObservableListBase.java:233)
+	at javafx.collections.transformation.SortedList.doSortWithPermutationChange(SortedList.java:217)
+	at javafx.collections.transformation.SortedList$1.invalidated(SortedList.java:132)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at javafx.collections.transformation.SortedList.setComparator(SortedList.java:155)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:90)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:94)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.makeBranches(SourceTreeTable.java:153)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.removeEntry(SourceTreeTable.java:81)
+	at edu.wpi.first.shuffleboard.app.components.InteractiveSourceTree.lambda$new$5(InteractiveSourceTree.java:94)
+	at com.sun.javafx.collections.MapListenerHelper$SingleChange.fireValueChangedEvent(MapListenerHelper.java:163)
+	at com.sun.javafx.collections.MapListenerHelper.fireValueChangedEvent(MapListenerHelper.java:72)
+	at com.sun.javafx.collections.ObservableMapWrapper.callObservers(ObservableMapWrapper.java:115)
+	at com.sun.javafx.collections.ObservableMapWrapper.clear(ObservableMapWrapper.java:203)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSourceType.lambda$new$2(NetworkTableSourceType.java:45)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Feb 24, 2023 4:27:38 PM edu.wpi.first.shuffleboard.app.Shuffleboard uncaughtException
+WARNING: Uncaught exception on JavaFX Application Thread
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at javafx.collections.ListChangeListener$Change.getPermutation(ListChangeListener.java:295)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2599)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2449)
+	at javafx.event.WeakEventHandler.handle(WeakEventHandler.java:79)
+	at com.sun.javafx.event.CompositeEventHandler$WeakEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:248)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.TreeItem.fireEvent(TreeItem.java:764)
+	at javafx.scene.control.TreeItem.updateChildren(TreeItem.java:943)
+	at javafx.scene.control.TreeItem.lambda$new$0(TreeItem.java:425)
+	at com.sun.javafx.collections.ListListenerHelper$SingleChange.fireValueChangedEvent(ListListenerHelper.java:164)
+	at com.sun.javafx.collections.ListListenerHelper.fireValueChangedEvent(ListListenerHelper.java:73)
+	at javafx.collections.ObservableListBase.fireChange(ObservableListBase.java:233)
+	at javafx.collections.transformation.SortedList.doSortWithPermutationChange(SortedList.java:189)
+	at javafx.collections.transformation.SortedList$1.invalidated(SortedList.java:132)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at javafx.collections.transformation.SortedList.setComparator(SortedList.java:155)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:91)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:94)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.makeBranches(SourceTreeTable.java:153)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.removeEntry(SourceTreeTable.java:81)
+	at edu.wpi.first.shuffleboard.app.components.InteractiveSourceTree.lambda$new$5(InteractiveSourceTree.java:94)
+	at com.sun.javafx.collections.MapListenerHelper$SingleChange.fireValueChangedEvent(MapListenerHelper.java:163)
+	at com.sun.javafx.collections.MapListenerHelper.fireValueChangedEvent(MapListenerHelper.java:72)
+	at com.sun.javafx.collections.ObservableMapWrapper.callObservers(ObservableMapWrapper.java:115)
+	at com.sun.javafx.collections.ObservableMapWrapper.clear(ObservableMapWrapper.java:203)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSourceType.lambda$new$2(NetworkTableSourceType.java:45)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Feb 24, 2023 4:27:38 PM edu.wpi.first.shuffleboard.app.Shuffleboard uncaughtException
+WARNING: Uncaught exception on JavaFX Application Thread
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at javafx.collections.ListChangeListener$Change.getPermutation(ListChangeListener.java:295)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2599)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2449)
+	at javafx.event.WeakEventHandler.handle(WeakEventHandler.java:79)
+	at com.sun.javafx.event.CompositeEventHandler$WeakEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:248)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.TreeItem.fireEvent(TreeItem.java:764)
+	at javafx.scene.control.TreeItem.updateChildren(TreeItem.java:943)
+	at javafx.scene.control.TreeItem.lambda$new$0(TreeItem.java:425)
+	at com.sun.javafx.collections.ListListenerHelper$SingleChange.fireValueChangedEvent(ListListenerHelper.java:164)
+	at com.sun.javafx.collections.ListListenerHelper.fireValueChangedEvent(ListListenerHelper.java:73)
+	at javafx.collections.ObservableListBase.fireChange(ObservableListBase.java:233)
+	at javafx.collections.transformation.SortedList.doSortWithPermutationChange(SortedList.java:217)
+	at javafx.collections.transformation.SortedList$1.invalidated(SortedList.java:132)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at javafx.collections.transformation.SortedList.setComparator(SortedList.java:155)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:90)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:94)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.makeBranches(SourceTreeTable.java:153)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.removeEntry(SourceTreeTable.java:81)
+	at edu.wpi.first.shuffleboard.app.components.InteractiveSourceTree.lambda$new$5(InteractiveSourceTree.java:94)
+	at com.sun.javafx.collections.MapListenerHelper$SingleChange.fireValueChangedEvent(MapListenerHelper.java:163)
+	at com.sun.javafx.collections.MapListenerHelper.fireValueChangedEvent(MapListenerHelper.java:72)
+	at com.sun.javafx.collections.ObservableMapWrapper.callObservers(ObservableMapWrapper.java:115)
+	at com.sun.javafx.collections.ObservableMapWrapper.clear(ObservableMapWrapper.java:203)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSourceType.lambda$new$2(NetworkTableSourceType.java:45)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Feb 24, 2023 4:27:38 PM edu.wpi.first.shuffleboard.app.Shuffleboard uncaughtException
+WARNING: Uncaught exception on JavaFX Application Thread
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at javafx.collections.ListChangeListener$Change.getPermutation(ListChangeListener.java:295)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2599)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2449)
+	at javafx.event.WeakEventHandler.handle(WeakEventHandler.java:79)
+	at com.sun.javafx.event.CompositeEventHandler$WeakEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:248)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.TreeItem.fireEvent(TreeItem.java:764)
+	at javafx.scene.control.TreeItem.updateChildren(TreeItem.java:943)
+	at javafx.scene.control.TreeItem.lambda$new$0(TreeItem.java:425)
+	at com.sun.javafx.collections.ListListenerHelper$SingleChange.fireValueChangedEvent(ListListenerHelper.java:164)
+	at com.sun.javafx.collections.ListListenerHelper.fireValueChangedEvent(ListListenerHelper.java:73)
+	at javafx.collections.ObservableListBase.fireChange(ObservableListBase.java:233)
+	at javafx.collections.transformation.SortedList.doSortWithPermutationChange(SortedList.java:189)
+	at javafx.collections.transformation.SortedList$1.invalidated(SortedList.java:132)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at javafx.collections.transformation.SortedList.setComparator(SortedList.java:155)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:91)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:94)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.makeBranches(SourceTreeTable.java:153)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.removeEntry(SourceTreeTable.java:81)
+	at edu.wpi.first.shuffleboard.app.components.InteractiveSourceTree.lambda$new$5(InteractiveSourceTree.java:94)
+	at com.sun.javafx.collections.MapListenerHelper$SingleChange.fireValueChangedEvent(MapListenerHelper.java:163)
+	at com.sun.javafx.collections.MapListenerHelper.fireValueChangedEvent(MapListenerHelper.java:72)
+	at com.sun.javafx.collections.ObservableMapWrapper.callObservers(ObservableMapWrapper.java:115)
+	at com.sun.javafx.collections.ObservableMapWrapper.clear(ObservableMapWrapper.java:203)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSourceType.lambda$new$2(NetworkTableSourceType.java:45)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Feb 24, 2023 4:27:38 PM edu.wpi.first.shuffleboard.app.Shuffleboard uncaughtException
+WARNING: Uncaught exception on JavaFX Application Thread
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at javafx.collections.ListChangeListener$Change.getPermutation(ListChangeListener.java:295)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2599)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2449)
+	at javafx.event.WeakEventHandler.handle(WeakEventHandler.java:79)
+	at com.sun.javafx.event.CompositeEventHandler$WeakEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:248)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.TreeItem.fireEvent(TreeItem.java:764)
+	at javafx.scene.control.TreeItem.updateChildren(TreeItem.java:943)
+	at javafx.scene.control.TreeItem.lambda$new$0(TreeItem.java:425)
+	at com.sun.javafx.collections.ListListenerHelper$SingleChange.fireValueChangedEvent(ListListenerHelper.java:164)
+	at com.sun.javafx.collections.ListListenerHelper.fireValueChangedEvent(ListListenerHelper.java:73)
+	at javafx.collections.ObservableListBase.fireChange(ObservableListBase.java:233)
+	at javafx.collections.transformation.SortedList.doSortWithPermutationChange(SortedList.java:217)
+	at javafx.collections.transformation.SortedList$1.invalidated(SortedList.java:132)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at javafx.collections.transformation.SortedList.setComparator(SortedList.java:155)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:90)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:94)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.makeBranches(SourceTreeTable.java:153)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.removeEntry(SourceTreeTable.java:81)
+	at edu.wpi.first.shuffleboard.app.components.InteractiveSourceTree.lambda$new$5(InteractiveSourceTree.java:94)
+	at com.sun.javafx.collections.MapListenerHelper$SingleChange.fireValueChangedEvent(MapListenerHelper.java:163)
+	at com.sun.javafx.collections.MapListenerHelper.fireValueChangedEvent(MapListenerHelper.java:72)
+	at com.sun.javafx.collections.ObservableMapWrapper.callObservers(ObservableMapWrapper.java:115)
+	at com.sun.javafx.collections.ObservableMapWrapper.clear(ObservableMapWrapper.java:203)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSourceType.lambda$new$2(NetworkTableSourceType.java:45)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Feb 24, 2023 4:27:38 PM edu.wpi.first.shuffleboard.app.Shuffleboard uncaughtException
+WARNING: Uncaught exception on JavaFX Application Thread
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at javafx.collections.ListChangeListener$Change.getPermutation(ListChangeListener.java:295)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2599)
+	at javafx.scene.control.TreeTableView$TreeTableViewArrayListSelectionModel$3.handle(TreeTableView.java:2449)
+	at javafx.event.WeakEventHandler.handle(WeakEventHandler.java:79)
+	at com.sun.javafx.event.CompositeEventHandler$WeakEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:248)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.TreeItem.fireEvent(TreeItem.java:764)
+	at javafx.scene.control.TreeItem.updateChildren(TreeItem.java:943)
+	at javafx.scene.control.TreeItem.lambda$new$0(TreeItem.java:425)
+	at com.sun.javafx.collections.ListListenerHelper$SingleChange.fireValueChangedEvent(ListListenerHelper.java:164)
+	at com.sun.javafx.collections.ListListenerHelper.fireValueChangedEvent(ListListenerHelper.java:73)
+	at javafx.collections.ObservableListBase.fireChange(ObservableListBase.java:233)
+	at javafx.collections.transformation.SortedList.doSortWithPermutationChange(SortedList.java:189)
+	at javafx.collections.transformation.SortedList$1.invalidated(SortedList.java:132)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at javafx.collections.transformation.SortedList.setComparator(SortedList.java:155)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:91)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at edu.wpi.first.shuffleboard.api.components.FilterableTreeItem.sortChildren(FilterableTreeItem.java:94)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.makeBranches(SourceTreeTable.java:153)
+	at edu.wpi.first.shuffleboard.api.components.SourceTreeTable.removeEntry(SourceTreeTable.java:81)
+	at edu.wpi.first.shuffleboard.app.components.InteractiveSourceTree.lambda$new$5(InteractiveSourceTree.java:94)
+	at com.sun.javafx.collections.MapListenerHelper$SingleChange.fireValueChangedEvent(MapListenerHelper.java:163)
+	at com.sun.javafx.collections.MapListenerHelper.fireValueChangedEvent(MapListenerHelper.java:72)
+	at com.sun.javafx.collections.ObservableMapWrapper.callObservers(ObservableMapWrapper.java:115)
+	at com.sun.javafx.collections.ObservableMapWrapper.clear(ObservableMapWrapper.java:203)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSourceType.lambda$new$2(NetworkTableSourceType.java:45)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Feb 24, 2023 4:37:33 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get bandwidth
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualDataRate(VideoSource.java:334)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:139)
+
+Feb 24, 2023 4:37:33 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get framerate
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualFPS(VideoSource.java:321)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:145)
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {IsRedAlliance=true, GameSpecificMessage=, MatchNumber=0.0, MatchType=0.0, StationNumber=1.0, FMSControlData=33.0, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: ReplayNumber
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:70)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, MatchNumber=0.0, MatchType=0.0, StationNumber=1.0, FMSControlData=33.0, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: ReplayNumber
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:70)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, MatchNumber=0.0, MatchType=0.0, FMSControlData=33.0, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: ReplayNumber
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:70)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, MatchNumber=0.0, MatchType=0.0, FMSControlData=33.0}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: EventName
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:68)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, MatchType=0.0, FMSControlData=33.0}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: EventName
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:68)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {MatchType=0.0, FMSControlData=33.0}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {MatchType=0.0}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {.type=FMSInfo}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, .type=FMSInfo}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: EventName
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:68)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: MatchNumber
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:69)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, MatchNumber=0.0, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: ReplayNumber
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:70)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, ReplayNumber=0.0, MatchNumber=0.0, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: MatchType
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:71)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, ReplayNumber=0.0, MatchNumber=0.0, MatchType=0.0, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: IsRedAlliance
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:72)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {IsRedAlliance=true, GameSpecificMessage=, ReplayNumber=0.0, MatchNumber=0.0, MatchType=0.0, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: StationNumber
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:73)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 24, 2023 4:54:12 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {IsRedAlliance=true, GameSpecificMessage=, ReplayNumber=0.0, MatchNumber=0.0, MatchType=0.0, StationNumber=1.0, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: FMSControlData
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:74)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 25, 2023 10:12:18 AM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get bandwidth
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualDataRate(VideoSource.java:334)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:139)
+
+Feb 25, 2023 10:12:18 AM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get framerate
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualFPS(VideoSource.java:321)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:145)
+
+Feb 25, 2023 2:52:40 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get bandwidth
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualDataRate(VideoSource.java:334)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:139)
+
+Feb 25, 2023 2:52:40 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get framerate
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualFPS(VideoSource.java:321)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:145)
+
+Feb 27, 2023 3:51:54 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get bandwidth
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualDataRate(VideoSource.java:334)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:139)
+
+Feb 27, 2023 3:51:54 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get framerate
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualFPS(VideoSource.java:321)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:145)
+
+Feb 27, 2023 3:51:55 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get bandwidth
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualDataRate(VideoSource.java:334)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:139)
+
+Feb 27, 2023 3:51:55 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get framerate
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualFPS(VideoSource.java:321)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:145)
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {IsRedAlliance=true, GameSpecificMessage=, MatchNumber=0.0, MatchType=0.0, StationNumber=1.0, FMSControlData=44.0, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: ReplayNumber
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:70)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, MatchNumber=0.0, MatchType=0.0, StationNumber=1.0, FMSControlData=44.0, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: ReplayNumber
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:70)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, MatchNumber=0.0, MatchType=0.0, FMSControlData=44.0, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: ReplayNumber
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:70)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, MatchNumber=0.0, MatchType=0.0, FMSControlData=44.0}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: EventName
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:68)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, MatchType=0.0, FMSControlData=44.0}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: EventName
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:68)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {MatchType=0.0, FMSControlData=44.0}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {MatchType=0.0}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {.type=FMSInfo}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: GameSpecificMessage
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:67)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, .type=FMSInfo}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: EventName
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:68)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: MatchNumber
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:69)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, MatchNumber=0.0, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: ReplayNumber
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:70)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, ReplayNumber=0.0, MatchNumber=0.0, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: MatchType
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:71)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {GameSpecificMessage=, ReplayNumber=0.0, MatchNumber=0.0, MatchType=0.0, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: IsRedAlliance
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:72)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {IsRedAlliance=true, GameSpecificMessage=, ReplayNumber=0.0, MatchNumber=0.0, MatchType=0.0, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: StationNumber
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:73)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 27, 2023 4:51:11 PM edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource lambda$new$0
+WARNING: Incomplete data for type FMSInfo
+edu.wpi.first.shuffleboard.api.data.IncompleteDataException: Incomplete data in map: {IsRedAlliance=true, GameSpecificMessage=, ReplayNumber=0.0, MatchNumber=0.0, MatchType=0.0, StationNumber=1.0, .type=FMSInfo, EventName=}
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:33)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.CompositeNetworkTableSource.lambda$new$0(CompositeNetworkTableSource.java:57)
+	at edu.wpi.first.shuffleboard.plugin.networktables.sources.NetworkTableSource.lambda$setTableListener$0(NetworkTableSource.java:72)
+	at edu.wpi.first.shuffleboard.api.util.FxUtils.lambda$runOnFxThread$0(FxUtils.java:64)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.util.NoSuchElementException: No such key: FMSControlData
+	at edu.wpi.first.shuffleboard.api.util.Maps.get(Maps.java:78)
+	at edu.wpi.first.shuffleboard.plugin.base.data.fms.FmsInfo.<init>(FmsInfo.java:74)
+	at edu.wpi.first.shuffleboard.api.data.ComplexDataType.fromMap(ComplexDataType.java:31)
+	... 10 more
+
+Feb 28, 2023 4:09:04 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get bandwidth
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualDataRate(VideoSource.java:334)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:139)
+
+Feb 28, 2023 4:09:04 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get framerate
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualFPS(VideoSource.java:321)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:145)
+

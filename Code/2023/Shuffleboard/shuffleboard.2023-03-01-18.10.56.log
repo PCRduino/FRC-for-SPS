@@ -1,0 +1,168 @@
+Mar 01, 2023 6:10:56 PM edu.wpi.first.shuffleboard.app.Shuffleboard init
+INFO: Build time: 2022-02-26T21:38:33.311213200Z
+Mar 01, 2023 6:10:56 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loading plugin edu.wpi.first.shuffleboard:Base:1.3.1
+Mar 01, 2023 6:10:56 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loaded plugin edu.wpi.first.shuffleboard:Base in 90ms
+Mar 01, 2023 6:10:56 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loading plugin edu.wpi.first.shuffleboard:NetworkTables:2.3.0
+Mar 01, 2023 6:10:56 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loaded plugin edu.wpi.first.shuffleboard:NetworkTables in 25ms
+Mar 01, 2023 6:10:56 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loading plugin edu.wpi.first.shuffleboard:CameraServer:3.1.0
+Mar 01, 2023 6:11:00 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loaded plugin edu.wpi.first.shuffleboard:CameraServer in 3886ms
+Mar 01, 2023 6:11:00 PM edu.wpi.first.shuffleboard.app.MainWindowController initialize
+INFO: Setting up plugins in the UI
+Mar 01, 2023 6:11:00 PM edu.wpi.first.shuffleboard.app.Shuffleboard init
+WARNING: Took 526ms to load the main FXML
+Mar 01, 2023 6:11:04 PM edu.wpi.first.shuffleboard.app.Shuffleboard start
+WARNING: Took 8561ms to start Shuffleboard
+Mar 01, 2023 6:11:05 PM edu.wpi.first.shuffleboard.app.Shuffleboard uncaughtException
+WARNING: Uncaught exception on JavaFX Application Thread
+java.lang.ClassCastException: class com.google.gson.internal.LazilyParsedNumber cannot be cast to class java.lang.Integer (com.google.gson.internal.LazilyParsedNumber is in unnamed module of loader 'app'; java.lang.Integer is in module java.base of loader 'bootstrap')
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.widget.CameraServerWidget.applySettings(CameraServerWidget.java:165)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.widget.CameraServerWidget.lambda$initialize$6(CameraServerWidget.java:126)
+	at com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:360)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+	at javafx.beans.property.ObjectPropertyBase.fireValueChangedEvent(ObjectPropertyBase.java:106)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:113)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:147)
+	at edu.wpi.first.shuffleboard.api.widget.SingleSourceWidget.addSource(SingleSourceWidget.java:20)
+	at edu.wpi.first.shuffleboard.app.json.WidgetSaver.deserialize(WidgetSaver.java:73)
+	at edu.wpi.first.shuffleboard.app.json.WidgetSaver.deserialize(WidgetSaver.java:23)
+	at edu.wpi.first.shuffleboard.api.json.ElementTypeAdapter.deserialize(ElementTypeAdapter.java:30)
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:953)
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162)
+	at edu.wpi.first.shuffleboard.app.json.WidgetPaneSaver.deserialize(WidgetPaneSaver.java:79)
+	at edu.wpi.first.shuffleboard.app.json.WidgetPaneSaver.deserialize(WidgetPaneSaver.java:25)
+	at edu.wpi.first.shuffleboard.api.json.ElementTypeAdapter.deserialize(ElementTypeAdapter.java:30)
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:953)
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162)
+	at edu.wpi.first.shuffleboard.app.json.DashboardTabPaneSaver.deserialize(DashboardTabPaneSaver.java:55)
+	at edu.wpi.first.shuffleboard.app.json.DashboardTabPaneSaver.deserialize(DashboardTabPaneSaver.java:22)
+	at edu.wpi.first.shuffleboard.api.json.ElementTypeAdapter.deserialize(ElementTypeAdapter.java:30)
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.read(ReflectiveTypeAdapterFactory.java:129)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:220)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:826)
+	at edu.wpi.first.shuffleboard.app.SaveFileHandler.load(SaveFileHandler.java:115)
+	at edu.wpi.first.shuffleboard.app.MainWindowController.load(MainWindowController.java:254)
+	at edu.wpi.first.shuffleboard.app.Shuffleboard.lambda$start$3(Shuffleboard.java:116)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+Mar 01, 2023 6:11:05 PM edu.wpi.first.shuffleboard.app.json.WidgetSaver deserialize
+WARNING: Saved source type is not present, adding destroyed source(s) instead
+Mar 01, 2023 6:11:05 PM edu.wpi.first.shuffleboard.app.json.WidgetSaver deserialize
+WARNING: Saved source type is not present, adding destroyed source(s) instead
+Mar 01, 2023 6:11:05 PM edu.wpi.first.shuffleboard.app.json.WidgetSaver deserialize
+WARNING: Saved source type is not present, adding destroyed source(s) instead
+Mar 01, 2023 6:11:05 PM edu.wpi.first.shuffleboard.app.json.WidgetSaver deserialize
+WARNING: Saved source type is not present, adding destroyed source(s) instead
+Mar 01, 2023 6:13:05 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get bandwidth
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualDataRate(VideoSource.java:334)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:139)
+
+Mar 01, 2023 6:13:05 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get framerate
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualFPS(VideoSource.java:321)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:145)
+
+Mar 01, 2023 6:24:06 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get bandwidth
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualDataRate(VideoSource.java:334)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:139)
+
+Mar 01, 2023 6:24:06 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get framerate
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualFPS(VideoSource.java:321)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:145)
+
+Mar 02, 2023 1:50:31 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get bandwidth
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualDataRate(VideoSource.java:334)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:139)
+
+Mar 02, 2023 1:50:31 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get framerate
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualFPS(VideoSource.java:321)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:145)
+
+Mar 02, 2023 2:25:29 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get bandwidth
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualDataRate(VideoSource.java:334)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:139)
+
+Mar 02, 2023 2:25:29 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get framerate
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualFPS(VideoSource.java:321)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:145)
+
+Mar 02, 2023 2:50:46 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get bandwidth
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualDataRate(VideoSource.java:334)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:139)
+
+Mar 02, 2023 2:50:46 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get framerate
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualFPS(VideoSource.java:321)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:145)
+
+Mar 02, 2023 2:53:56 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get bandwidth
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualDataRate(VideoSource.java:334)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:139)
+
+Mar 02, 2023 2:53:56 PM edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource lambda$new$5
+WARNING: Could not get framerate
+VideoException [edu.wpi.first.cscore.VideoException: empty value]
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(Native Method)
+	at edu.wpi.first.cscore.CameraServerJNI.getTelemetryAverageValue(CameraServerJNI.java:364)
+	at edu.wpi.first.cscore.VideoSource.getActualFPS(VideoSource.java:321)
+	at edu.wpi.first.shuffleboard.plugin.cameraserver.source.CameraServerSource.lambda$new$5(CameraServerSource.java:145)
+

@@ -1,0 +1,28 @@
+Feb 20, 2023 4:43:46 PM edu.wpi.first.shuffleboard.api.util.Storage findOrCreate
+INFO: Creating directory C:\Users\robotadmin\Shuffleboard\themes
+Feb 20, 2023 4:43:46 PM edu.wpi.first.shuffleboard.app.Shuffleboard init
+INFO: Build time: 2022-02-26T21:38:33.311213200Z
+Feb 20, 2023 4:43:47 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loading plugin edu.wpi.first.shuffleboard:Base:1.3.1
+Feb 20, 2023 4:43:47 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loaded plugin edu.wpi.first.shuffleboard:Base in 86ms
+Feb 20, 2023 4:43:47 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loading plugin edu.wpi.first.shuffleboard:NetworkTables:2.3.0
+Feb 20, 2023 4:43:47 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loaded plugin edu.wpi.first.shuffleboard:NetworkTables in 21ms
+Feb 20, 2023 4:43:47 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loading plugin edu.wpi.first.shuffleboard:CameraServer:3.1.0
+Feb 20, 2023 4:43:54 PM edu.wpi.first.shuffleboard.app.plugin.PluginLoader load
+INFO: Loaded plugin edu.wpi.first.shuffleboard:CameraServer in 7324ms
+Feb 20, 2023 4:43:54 PM edu.wpi.first.shuffleboard.api.util.Storage findOrCreate
+INFO: Creating directory C:\Users\robotadmin\Shuffleboard\plugins
+Feb 20, 2023 4:43:55 PM edu.wpi.first.shuffleboard.app.MainWindowController initialize
+INFO: Setting up plugins in the UI
+Feb 20, 2023 4:43:55 PM edu.wpi.first.shuffleboard.app.Shuffleboard init
+WARNING: Took 722ms to load the main FXML
+Feb 20, 2023 4:44:00 PM edu.wpi.first.shuffleboard.app.Shuffleboard start
+WARNING: Took 13284ms to start Shuffleboard
+Feb 22, 2023 3:53:34 PM edu.wpi.first.shuffleboard.app.Shuffleboard stop
+INFO: Running shutdown hooks
+Feb 22, 2023 3:53:34 PM edu.wpi.first.shuffleboard.app.Shuffleboard stop
+INFO: Shutting down
